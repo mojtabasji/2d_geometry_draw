@@ -1,0 +1,36 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="2d_geometry.js"></script>
+    <style>
+        .frame {
+            border: 1px solid black;
+            width: 500px;
+            height: 500px;
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="frame" class="frame"></div>
+    <button onclick="increase()">increase size</button>
+    <button onclick="decrease()">decrease size</button>
+    <button onclick="draw()">Drow Shapes</button>
+    <p id="dim">500 * 500</p>
+    <p>*** you can zoom-in zoom-out and pan over window ***</p>
+    <p> <b> Shapes: </b> <br>
+        { x: -10, y: -10, x1: 10, y1: 10, type: "line", color: "red" }, <br>
+        { x: 15, y: 15, type: "point", color: "red", w: 2, h: 2 }, <br>
+        { x: 0, y: 15, type: "ellipse", color: "red", w: 2, h: 4 }, <br>
+        { x: 15, y: 0, type: "rectangle", color: "green", w: 4, h: 2 }, <br>
+        { x: 0, y: 0, type: "text", text: "hello world", color: "red" },
+    </p>
+</body>
+
+</html>
